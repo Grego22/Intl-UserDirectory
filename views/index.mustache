@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='style.css'>
     </style>
     <title></title>
   </head>
@@ -24,9 +24,10 @@
         <p>Available for hire</p>
       </li>
       <li>
-        <img src="http://via.placeholder.com/150x150" alt="">
-        <h3>John Smith</h3>
-        <p>Available for hire</p>
+        <img src="{{avatar}}">
+        <h3>{{name}}</h3>
+        <p>{{#job}} {{job}} {{company}} {{/job}}</p>
+        <p>{{^job}}Available for hire {{/job}}</p>
       </li>
     </ul>
   </body>
