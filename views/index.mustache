@@ -7,28 +7,16 @@
     <title></title>
   </head>
   <body>
-    <ul>
-      <li>
-        <img src="http://via.placeholder.com/150x150" alt="">
-        <h3>John Smith</h3>
-        <p>Available for hire</p>
-      </li>
-      <li>
-        <img src="http://via.placeholder.com/150x150" alt="">
-        <h3>John Smith</h3>
-        <p>Available for hire</p>
-      </li>
-      <li>
-        <img src="http://via.placeholder.com/150x150" alt="">
-        <h3>John Smith</h3>
-        <p>Available for hire</p>
-      </li>
+  	 {{#users}}
+
+    <ul class="users">
       <li>
         <img src="{{avatar}}">
         <h3>{{name}}</h3>
         <p>{{#job}} {{job}} {{company}} {{/job}}</p>
-        <p>{{^job}}Available for hire {{/job}}</p>
+        <p class="Avail">{{^job}}Available for hire {{/job}}</p>
       </li>
     </ul>
+    {{/users}}
   </body>
 </html>

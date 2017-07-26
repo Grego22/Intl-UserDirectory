@@ -1,22 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
 body {
-	font-family: sans-serif;
-}
-li {
-	list-style: none;
-	border: solid 2px #000000;
-	padding: 5px;
-	margin: 5px;
-	width: calc(25% - 30px);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: 'Abel';
 }
+
 ul {
 	display: flex;
-	flex-wrap: wrap;
+	flex-basis: 20%;
+	border: 1px solid;
+	border-color: #f1f1f1;
+	padding: 1em;
+	list-style: none;
 }
-p,
 h3 {
-	width: 100%;
-	text-align: center;
+	color: #4382cb;
+}
+.Avail {
+	color: red;
 }
