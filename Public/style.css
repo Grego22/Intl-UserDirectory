@@ -22,3 +22,7 @@ h3 {
 .Avail {
 	color: red;
 }
+
+.profile {
+	border-radius: 50%;
+}
